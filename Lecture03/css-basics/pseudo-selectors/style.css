@@ -1,0 +1,26 @@
+#click {
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  font-size: 20pt;
+  color: white;
+  background-color: blueviolet;
+}
+
+#click:hover {
+  color: darkblue;
+  background-color: blanchedalmond;
+}
+
+#click:active {
+  font-size: 10pt;
+}
+
+#list1 :first-child {
+  font-size: 20pt;
+}
+
+#list2 :nth-child(2n + 1) {
+  color: green;
+}
+
