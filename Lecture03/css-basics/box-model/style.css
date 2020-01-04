@@ -1,0 +1,26 @@
+div.x {
+  border: solid black 1px;
+  margin: 10px;
+}
+
+div.y {
+  border: solid black 1px;
+  padding: 10px;
+}
+
+div.z {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.outer {
+  background-color: bisque;
+}
+
+.middle {
+  background-color: pink;
+}
+
+.inner {
+  background-color: azure;
+}

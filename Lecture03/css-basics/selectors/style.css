@@ -3,6 +3,14 @@
   color: red;
 }
 
+.big {
+  font-size: 20pt;
+}
+
+#one {
+  background-color: yellow;
+}
+
 div {
   font-family: sans-serif;
 }
