@@ -1,0 +1,19 @@
+div {
+  color: red;
+}
+
+div li {
+  font-size: 20pt;
+}
+
+div > p {
+  font-style: italic;
+}
+
+h1 + div {
+  background-color: yellow;
+}
+
+div, p {
+  border: solid black 1px;
+}
