@@ -1,0 +1,33 @@
+body {
+  margin-left: 100px;
+}
+div {
+  border: solid 2px red;
+  background-color:aqua;
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+  font-size: 20pt;
+}
+
+.two {
+  transform: translate(30px, -40px);
+}
+
+.three {
+  transform: scale(2, 0.5)
+  /* height: 200px;
+  width: 200px; */
+}
+
+.five {
+  transform: rotateY(80deg)
+}
+
+.seven {
+  transform: skew(30deg, 30deg)
+}
+
+.nine {
+  transform: scaleX(2) scaleY(1.5) skewX(10deg) skewY(20deg)
+}
