@@ -1,0 +1,30 @@
+body {
+  margin-left: 100px;
+}
+div {
+  border: solid 2px red;
+  background-color: aqua;
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+  font-size: 20pt;
+  transition: 2s, height 4s, width 1s;
+}
+
+.two:hover {
+  background-color: gold;
+}
+
+.three:hover {
+  transform: scale(2)
+}
+
+.five:hover {
+  height: 200px;
+  width: 50px;
+}
+
+.seven:hover {
+  transform: translateY(50px);
+  /* margin-top: 50px; */
+}
