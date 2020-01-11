@@ -20,9 +20,11 @@ div {
 
 @keyframes leftright {
   0% {
+    animation-timing-function: ease-in;
     background-color: red;
   }
   33% {
+    animation-timing-function: ease-out;
     background-color: blue;
     transform: rotate(45deg);
   }
