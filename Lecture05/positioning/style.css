@@ -1,0 +1,39 @@
+.outer {
+  background-color: bisque;
+  margin: 40px;
+  border: solid brown 2px;
+  padding: 10px
+}
+
+.inner {
+  background-color: mediumvioletred;
+  margin: 20px;
+  height: 60px;
+  width: 60px;
+  border: solid white 2px;
+  padding: 10px;
+  color: white;
+}
+
+#x {
+  position: relative;
+  right: 50px;
+}
+
+#y {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+}
+
+#z {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
+#p {
+  position: sticky;
+  top: 50px;
+  bottom: 50px;
+}
