@@ -19,3 +19,5 @@ window.onload = function () {
     })
 
 }
+
+//https://2ality.com/2012/01/object-plus-object.html
