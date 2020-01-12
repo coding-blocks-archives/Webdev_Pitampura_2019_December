@@ -1,0 +1,20 @@
+"1" + (1+1) + "1"
+"121"
+[1,2] + [4,5]
+"1,24,5"
+"1" + 1+ 1 + "1"
+"1111"
+let obj = {a:10,b:true,c:"hello"}
+undefined
+obj
+Object { a: 10, b: true, c: "hello" }
+
+JSON.stringify(obj)
+"{\"a\":10,\"b\":true,\"c\":\"hello\"}"
+JSON.parse(obj)
+SyntaxError: JSON.parse: unexpected character at line 1 column 2 of the JSON data
+debugger eval code:1:6
+obj
+Object { a: 10, b: true, c: "hello" }
+
+JSON.parse()

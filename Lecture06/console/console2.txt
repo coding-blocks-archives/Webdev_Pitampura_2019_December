@@ -1,0 +1,31 @@
+1 + "1"
+"11"
+"2" + 2
+"22"
+1 + "1" + 1
+"111"
+1 === "1"
+false
+1 == "1"
+true
+'' === 0
+false
+'' == 0
+true
+true == 1
+true
+true == 0
+false
+true == 2
+false
+false == 0
+true
+false == 2
+false
+let a = [1,2,3]
+undefined
+a
+Array(3) [ 1, 2, 3 ]
+
+a.toString()
+"1,2,3"

@@ -1,0 +1,24 @@
+let obj = {a:10,b:20}
+undefined
+typeof obj
+"object"
+let str = JSON.stringify(obj)
+undefined
+str
+"{\"a\":10,\"b\":20}"
+typeof str
+"string"
+let arr = [1,2,3]
+undefined
+typeof arr
+"object"
+let obj = {}
+SyntaxError: redeclaration of let obj
+debugger eval code:1:1
+let obj1 = {}
+undefined
+typeof obj1
+"object"
+[] + {}
+"[object Object]"
++[]

@@ -1,0 +1,42 @@
+let x = 10
+undefined
+x
+10
+typeof x
+"number"
+x = "hello"
+"hello"
+let a = [1,2,3]
+undefined
+a
+Array(3) [ 1, 2, 3 ]
+
+typeof a
+"object"
+Object
+function Object()
+
+delete a[0]
+true
+a.length
+3
+a
+Array(3) [ undefined, 2, 3 ]
+
+let obj = {a:10, b:true,c:"Hello"}
+undefined
+obj
+Object { a: 10, b: true, c: "Hello" }
+
+obj.a
+10
+delet obj.a
+SyntaxError: unexpected token: identifier
+debugger eval code:1:6
+delet obj[a]
+SyntaxError: unexpected token: identifier
+debugger eval code:1:6
+delete obj.a
+true
+obj
+Object { b: true, c: "Hello" }
