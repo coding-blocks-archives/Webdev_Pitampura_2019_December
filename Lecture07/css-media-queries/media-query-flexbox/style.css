@@ -1,0 +1,19 @@
+.item {
+  padding: 30px;
+}
+
+@media (min-width: 500px) {
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .item {
+    width: 30%;
+  }
+}
