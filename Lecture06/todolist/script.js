@@ -5,6 +5,7 @@ window.onload = function() {
     list.innerHTML = ''
     for (let task of tasklist) {
       let newItem = document.createElement('li')
+      newItem.className = ''
       newItem.innerText = task
       list.appendChild(newItem)
     }

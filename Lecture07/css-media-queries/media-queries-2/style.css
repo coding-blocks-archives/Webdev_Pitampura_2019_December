@@ -1,0 +1,29 @@
+div {
+  background-color: red;
+  height: 500px;
+  width: 500px;
+  margin: 50px;
+}
+
+
+@media (min-width: 500px) {
+  div {
+    background-color: black;
+  }
+}
+
+
+@media (min-width: 600px) {
+  div {
+    background-color: green;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+
+@media (min-width: 700px) {
+  div {
+    background-color: blue;
+  }
+}
