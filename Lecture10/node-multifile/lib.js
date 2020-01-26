@@ -10,7 +10,9 @@ function subtract(a,b) {
     return a - b;
 }
 
-module.exports = {
-   add,
-    subtract,
+if(typeof window === 'undefined') {
+    module.exports = {
+       add,
+        subtract,
+    }
 }
