@@ -15,9 +15,7 @@ async function task() {
     let data3 = await p3
     console.log('data 3 read')
 
-    let sorted = data1
-      .toString()
-      .split(os.EOL)
+    let sorted = data1.toString().split(os.EOL)
       .concat(data2.toString().split(os.EOL))
       .concat(data3.toString().split(os.EOL))
       .sort((a, b) => a - b)
