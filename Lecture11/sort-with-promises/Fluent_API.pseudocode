@@ -1,0 +1,18 @@
+class Person {
+	int age
+	string name
+
+	function setAge(age) {
+		this.age = age
+		return this
+	}
+
+	function setName(name) {
+		this.name = name
+		return this
+	}
+}
+
+Person: p
+
+new Person().setAge(20).setName('John')
