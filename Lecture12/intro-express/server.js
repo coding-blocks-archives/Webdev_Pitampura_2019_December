@@ -43,7 +43,7 @@ app.get('/example', (req, res) => {
 
 app.get('/greet/:name/:greeting', (req, res) => {
   console.log(req.params)
-  let greeting = (req.params.greeting)
+  let greeting = req.params.greeting
   res.send(` Good ${greeting} ${req.params.name}`)
 })
 
