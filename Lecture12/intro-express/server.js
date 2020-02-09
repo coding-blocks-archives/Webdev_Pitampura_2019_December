@@ -5,6 +5,13 @@ const app = express()
 app.get('/', (req, res) => {
   res.send(`
   <html>
+    <head>
+      <style>
+        h1 {
+          color: red;
+        }
+      </style>
+    </head>
     <body>
       <h1>Hello</h1>
       <h2>Welcome to my server</h2>
@@ -34,6 +41,21 @@ app.get('/example', (req, res) => {
 
 })
 
+app.get('/greet/:name/:greeting', (req, res) => {
+  console.log(req.params)
+  let greeting = (req.params.greeting)
+  res.send(` Good ${greeting} ${req.params.name}`)
+})
+
+app.get('/greet', (req, res) => {
+  console.log(req.query)
+  let name = 'Guest'
+  if (req.query.name) { name = req.query.name }
+  let greeting = 'Hello'
+  if (req.query.greeting) { greeting = req.query.greeting }
+
+  res.send(`${greeting} ${name}`)
+})
 
 
 app.listen(3333, () => {
