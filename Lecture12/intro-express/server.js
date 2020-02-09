@@ -1,4 +1,5 @@
 const express = require('express')
+const request = require('request')
 const app = express()
 
 app.get('/', (req, res) => {
@@ -20,6 +21,20 @@ app.get('/x', (req, res) => {
 app.get('/logo', (req, res) => {
   res.sendFile(__dirname + '/google-logo.png')
 })
+
+app.get('/google', (req, res) => {
+  res.redirect('https://www.google.com')
+})
+
+app.get('/example', (req, res) => {
+
+  request('http://example.com', (err, resp, body) => {
+    res.send(body)
+  })
+
+})
+
+
 
 app.listen(3333, () => {
   console.log('server started')
