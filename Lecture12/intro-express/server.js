@@ -24,3 +24,7 @@ app.get('/logo', (req, res) => {
 app.listen(3333, () => {
   console.log('server started')
 })
+
+app.listen(3334, () => {
+  console.log('server started')
+})
