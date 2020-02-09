@@ -6,8 +6,8 @@ let todos = []
 app.get('/', (req, res) => {
 
   let items = ''
-  for (todo of todos) {
-    items += `<li> ${todo} </li> \n`
+  for (let i = 0; i < todos.length; i++) {
+    items += `<li> ${todos[i]} <a href="/${i}/delete">❌</a> </li> \n`
   }
 
 
@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
     <input type="submit">
   </form>
   <br>
-  <ol>
+  <ol start="0">
     ${items}
   </ol>
   `)
@@ -37,6 +37,19 @@ app.get('/:id', (req, res) => {
     res.send('Error: id not numerical')
   } else {
     res.send(todos[req.params.id])
+  }
+})
+
+app.get('/:id/delete', (req, res) => {
+  if (isNaN(parseInt(req.params.id))) {
+    res.send('Error: id not numerical')
+  } else {
+    if (todos[req.params.id]) {
+      todos.splice(req.params.id, 1)
+      res.redirect('/')
+    } else {
+      res.send('Error: No task on this index')
+    }
   }
 })
 
