@@ -47,6 +47,7 @@ app.get('/greet/:name/:greeting', (req, res) => {
   res.send(` Good ${greeting} ${req.params.name}`)
 })
 
+// http://localhost:3333/greet?name=Jane&greeting=Hi
 app.get('/greet', (req, res) => {
   console.log(req.query)
   let name = 'Guest'
