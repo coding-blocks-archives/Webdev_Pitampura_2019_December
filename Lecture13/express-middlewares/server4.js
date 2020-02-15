@@ -9,6 +9,7 @@ app.use((req, res, next) => {
     for (let q in req.query) {
         req.query[q] = decrypt(req.query[q])
     }
+    next()
 })
 
 app.use((req, res, next) => {
