@@ -28,7 +28,7 @@ app.post('/add', (req, res) => {
     if (req.body.newtask) {
         todos.push({
             name: req.body.newtask,
-            done: false
+            done: req.body.completed == 'on'
         })
     }
     res.redirect('/')
