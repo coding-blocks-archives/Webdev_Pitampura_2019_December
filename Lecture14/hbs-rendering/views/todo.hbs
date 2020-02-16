@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
+    <script defer src="/jquery.js"></script>
+    <script defer src="/todo.js"></script>
 </head>
 <body>
     <form action="/add" method="POST">
-        <input name="completed" type="checkbox">
-        <input name="newtask">
-        <button type="submit">ADD</button>
+        <input id="completed" name="completed" type="checkbox">
+        <input id="newtask" name="newtask">
+        <button id="addtask" type="submit">ADD</button>
     </form>
-
-    <ul>
+    <ul id="tasklist">
         {{#each todos as |todo|}}
             <li>
                 {{#if todo.done}}
