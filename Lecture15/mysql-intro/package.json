@@ -1,0 +1,14 @@
+{
+  "name": "mysql-intro",
+  "version": "1.0.0",
+  "description": "```shell mysql -u root -p # or  mysql -u root #without password #or sudo mysql #on ubuntu ``` ### Create Database and User (inside MySQL)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql2": "^2.1.0"
+  }
+}

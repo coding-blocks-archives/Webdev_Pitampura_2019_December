@@ -23,9 +23,24 @@ FLUSH PRIVILEGES;
 EXIT
 ```
 
+### If there is Password policy problems 
+
+```mysql
+SET GLOBAL validate_password_policy=LOW;
+```
+
 ### Login to MySQL (as the new user)
 
 ```shell
 mysql -u mytestuser -p 
 
+```
+
+### Create Table 
+
+```mysql
+CREATE TABLE myfirsttable (
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    name TEXT
+);
 ```
