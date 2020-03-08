@@ -16,6 +16,10 @@ app.use('/', express.static(__dirname + '/public'))
 
 io.on('connection', (socket) => {
     console.log('connection created', socket.id)
+
+    socket.on('beep', () => {
+        console.log('beep received from', socket.id)
+    })
 })
 
 
