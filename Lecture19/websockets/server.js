@@ -5,6 +5,8 @@ const http = require('http')
 // the socket.io library
 const socketio = require('socket.io')
 
+const PORT = process.env.PORT || 5555
+
 // the express app
 const app = express()
 // the http server created with logic of the app
@@ -32,6 +34,6 @@ io.on('connection', (socket) => {
 })
 
 
-server.listen(5555, () => {
-    console.log('server started')
+server.listen(PORT, () => {
+    console.log(`started on http://localhost:${PORT}`)
 })

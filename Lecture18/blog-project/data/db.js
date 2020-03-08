@@ -1,7 +1,8 @@
 const Sequelize = require('sequelize')
 
 const db = new Sequelize({
-    dialect: 'mysql',
+    dialect: 'sqlite',
+    storage: __dirname + '/blog.db',
     database: 'realworldio',
     username: 'conduit',
     password: 'conduit'
