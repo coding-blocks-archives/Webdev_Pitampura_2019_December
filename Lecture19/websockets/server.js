@@ -17,8 +17,11 @@ app.use('/', express.static(__dirname + '/public'))
 io.on('connection', (socket) => {
     console.log('connection created', socket.id)
 
-    socket.on('beep', () => {
-        console.log('beep received from', socket.id)
+    socket.on('beep', (data) => {
+        io.emit('beep', {
+            state: data.state,
+            id: socket.id
+        })
     })
 
     socket.on('msg_send', (data) => {
