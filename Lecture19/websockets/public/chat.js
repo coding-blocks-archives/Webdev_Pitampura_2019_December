@@ -1,10 +1,21 @@
 const socket = io()
 
-window.onload = function () {
-    let btnBeep = this.document.getElementById('beep')
+$(() => {
+  $('#beep').click(() => {
+    socket.emit('beep')
+  })
 
-    btnBeep.onclick = function () {
-        socket.emit('beep')
-    }
+  $('#send').click(() => {
+      let msg = $('#msg').val()
+      if (msg) {
+          socket.emit('msg_send', {msg: msg})
+          $('#msg').val('')
+      }
+  })
 
-}
+  socket.on('msg_rcvd', (data) => {
+      $('#chatbox').append(
+          $('<div>').text(data.msg)
+      )
+  })
+})

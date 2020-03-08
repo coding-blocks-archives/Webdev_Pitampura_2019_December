@@ -20,6 +20,12 @@ io.on('connection', (socket) => {
     socket.on('beep', () => {
         console.log('beep received from', socket.id)
     })
+
+    socket.on('msg_send', (data) => {
+        // io.emit('msg_rcvd', data)
+        // io.to('<socket id>').emit()
+        socket.broadcast.emit('msg_rcvd', data)
+    })
 })
 
 
